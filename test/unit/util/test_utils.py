@@ -15,6 +15,9 @@ SECTION_XML = """<?xml version="1.0" ?>
 </section>
 """
 
+def test_str_as_bool():
+    assert util.str_as_bool('True')
+
 
 def test_strip_control_characters():
     s = '\x00bla'
